@@ -1,0 +1,58 @@
+# Python caches and build artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+build/
+dist/
+
+# Local environments
+.venv/
+venv/
+env/
+
+# Secrets and credentials — never commit these
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+secrets.toml
+*.pem
+*.key
+*.p12
+credentials*.json
+
+# Private/raw experimental data. Keep only the documented synthetic demo.
+*.csv
+*.tsv
+*.xls
+*.xlsx
+*.xlsm
+!example_data/synthetic_neware_demo.csv
+data/
+raw_data/
+private_data/
+experimental_data/
+uploads/
+
+# Serialized models
+*.joblib
+*.pkl
+*.pickle
+
+# Local deliverables and scratch space
+outputs/
+work/
+*.zip
+*.log
+
+# Editors and operating systems
+.DS_Store
+.idea/
+.vscode/
+.ipynb_checkpoints/
